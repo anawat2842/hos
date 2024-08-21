@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import DoctorList from "@/components/doctor-list.vue";
+import DoctorList from "@/components/doctors.vue";
 
 export default {
   name: "DcotorList",

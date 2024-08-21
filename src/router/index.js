@@ -2,8 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import DoctorList from "../views/Doctors.vue";
-import patientList from "@/components/patient-list.vue";
-import roomList from "@/components/room-list.vue";
+import PatientList from "@/components/patients.vue";
+import roomList from "@/components/rooms.vue";
+import departments from "@/components/departments.vue";
 
 Vue.use(VueRouter);
 
@@ -21,12 +22,17 @@ const routes = [
   {
     path: "/patients",
     name: "Patients List",
-    component: patientList,
+    component: PatientList,
   },
   {
     path: "/rooms",
     // name: "Room list",
     component: roomList,
+  },
+  {
+    path: "/departments",
+    name: "DepartmentList",
+    component: departments,
   },
 ];
 
